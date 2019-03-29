@@ -1,0 +1,19 @@
+.book__cover {
+    width: 266px;
+    height: 375px;
+    object-fit: contain;
+}
+
+.book__data {
+    text-align: center;
+}
+
+.book__title {
+    margin-bottom: 10px;
+}
+
+.ui.cards>.card>.image {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto
+}
