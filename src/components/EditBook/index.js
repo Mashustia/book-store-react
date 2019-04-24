@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
-import { Header } from 'semantic-ui-react';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
-import HeaderMenu from '../HeaderMenu';
 import './style.css';
 
 class EditBook extends Component {
@@ -37,9 +35,7 @@ class EditBook extends Component {
     const { form } = this.state;
     return (
       <Container className="edit__book">
-        <HeaderMenu goTo={this.props.goTo} />
-        <Header as='h1'>Редактирование книги</Header>
-        <Button className="edit__button" onClick={() => this.setState({...form, disabled: false})}>Редактировать книгу</Button>
+        <Button className="edit__button">Редактировать книгу</Button>
         <Form className="edit__form">
           <Form.Field disabled={this.state.disabled} className="form__field" id='title' control={Input} label='Название' onChange={this.handleChange} value={form.title} required/>
           <Form.Field disabled={this.state.disabled} className="form__field" id='cover' control={Input} label='Обложка книги' onChange={this.handleChange} value={form.cover} />

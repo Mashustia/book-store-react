@@ -6,7 +6,8 @@
     "author": "Стоян Стефанов",
     "codeISBN": "139961087",
     "published": "2017",
-    "rating": "4"
+    "rating": "4",
+    "topic": "react"
   },
   {
     "title": "JavaScript. Сильные стороны",
@@ -15,7 +16,8 @@
     "author": "Дуглас Крокфорд",
     "codeISBN": "20217226",
     "published": "2013",
-    "rating": "4.5"
+    "rating": "4.5",
+    "topic": "javascript"
   },
   {
     "title": "JavaScript. Оптимизация производительности",
@@ -24,7 +26,8 @@
     "author": "Николас Закас",
     "codeISBN": "18421547",
     "published": "2012",
-    "rating": "4.5"
+    "rating": "4.5",
+    "topic": "javascript"
   },
   {
     "title": "JavaScript и jQuery. Исчерпывающее руководство",
@@ -33,7 +36,8 @@
     "author": "Дэвид Сойер Макфарланд",
     "codeISBN": "33835343",
     "published": "2017",
-    "rating": "4.5"
+    "rating": "4.5",
+    "topic": "javascript"
   },
   {
     "title": "Изучаем JavaScript. Руководство по созданию современных веб-сайтов",
@@ -42,7 +46,8 @@
     "author": "\tЭтан Браун",
     "codeISBN": "140372302",
     "published": "2017",
-    "rating": "3"
+    "rating": "3",
+    "topic": "javascript"
   },
   {
     "title": "Node.js. Разработка серверных приложений на JavaScript",
@@ -51,6 +56,7 @@
     "author": "\tДэвид Хэррон",
     "codeISBN": "136258242",
     "published": "2016",
-    "rating": "4"
+    "rating": "4",
+    "topic": "javascript"
   }
 ]

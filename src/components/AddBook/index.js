@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
-import { Header } from 'semantic-ui-react';
 import { Form, Input, TextArea } from 'semantic-ui-react';
-import HeaderMenu from '../HeaderMenu';
 
 class AddBook extends Component {
   state = {
@@ -52,8 +50,6 @@ class AddBook extends Component {
     const { form } = this.state;
     return (
       <Container className="edit__book">
-        <HeaderMenu goTo={this.props.goTo} />
-        <Header as='h1'>Добавить книгу</Header>
         <Form className="edit__form">
           <Form.Field className="form__field" id='title' control={Input} label='Название' placeholder='Гарри Поттер и философский камень' onChange={this.handleChange} value={form.title} required/>
           <Form.Field className="form__field" id='cover' control={Input} label='Обложка книги' onChange={this.handleChange} value={form.cover} />

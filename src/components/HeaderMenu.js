@@ -1,27 +1,36 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import { Menu } from 'semantic-ui-react'
 
 export default class HeaderMenu extends Component {
-  state = {
-    activeItem: this.props.activePage,
-    goTo: this.props.goTo
-  };
 
-  handleItemClick = (e, { name }) => {
-    this.setState({ activeItem: name });
-    this.state.goTo(name, {});
-  };
+  state = {}
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
 
   render() {
-    const { activeItem } = this.state;
+    const { activeItem } = this.state
 
     return (
       <Menu>
-        <Menu.Item name='MainPage' active={activeItem === 'MainPage'} onClick={this.handleItemClick}>
+        <Menu.Item
+          as={ Link }
+          name='mainPage'
+          active={activeItem === 'mainPage'}
+          onClick={this.handleItemClick}
+          to='/'
+        >
           Главная
         </Menu.Item>
 
-        <Menu.Item name='AddBook' active={activeItem === 'AddBook'} onClick={this.handleItemClick} >
+        <Menu.Item
+          as={ Link }
+          name='AddBook'
+          active={activeItem === 'AddBook'}
+          onClick={this.handleItemClick}
+          to='/addbook'
+        >
           Добавить книгу
         </Menu.Item>
       </Menu>
